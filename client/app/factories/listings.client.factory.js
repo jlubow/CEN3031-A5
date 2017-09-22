@@ -2,7 +2,7 @@ angular.module('listings').factory('Listings', ['$http',
   function($http) {
     var methods = {
       getAll: function() {
-        return $http.get('http://localhost:8080/api/listings');
+        return $http.get('https://floating-beyond-25200.herokuapp.com/api/listings');
       },
 
       create: function(listing) {
