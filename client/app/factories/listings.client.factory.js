@@ -2,6 +2,11 @@ angular.module('listings').factory('Listings', ['$http',
   function($http) {
     var methods = {
       getAll: function() {
+        
+        console.log(window.location.hostname);
+        console.log(window.location.host);
+
+        
         return $http.get(window.location.hostname + '/api/listings');
       },
 
